@@ -1,0 +1,302 @@
+
+.gallery {
+    width: 100%;
+  }
+
+  .overlayZ {
+    display:none;
+    transition: 0.3s;
+  }
+  .overlayZ p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 15%;
+    background: rgba(0, 0, 0, 0.404);
+    cursor:url(z.cur),auto;
+  }
+
+  .overlayZ p:hover{
+    border: 2px solid rgb(231, 73, 0);
+    background: rgba(0, 0, 0, 0.63);
+  }
+  
+  .gallery-container {
+    align-items: center;
+    display: flex;
+    height: 400px;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+  }
+  
+  .gallery-item {
+    height: 150px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 150px;
+    z-index: 0;
+  }
+  
+  .gallery-item-1 {
+    left: 15%;
+    opacity: .4;
+    transform: translateX(-50%);
+  }
+  
+  .gallery-item-2,
+  .gallery-item-4 {
+    height: 200px;
+    opacity: 1;
+    width: 200px;
+    z-index: 1;
+  }
+  
+  .gallery-item-2 {
+    left: 30%;
+    transform: translateX(-50%);
+  }
+
+  .gallery-item-2 .overlayZ{
+    height: 200px;
+    width: 150px;
+    z-index: 1;
+    display:block;
+    position: absolute;
+    border-radius: 15%;
+    left: 37%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.329);
+    opacity:0;
+    text-align: center;
+  }
+
+  .gallery-item-2 .overlayZ:hover{
+    opacity:1;
+  }
+  
+  .gallery-item-4 .overlayZ{
+    height: 200px;
+    width: 150px;
+    z-index: 1;
+    display:block;
+    position: absolute;
+    border-radius: 15%;
+    left: 63%;
+    text-align: center;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.329);
+    opacity:0;
+    text-align: center;
+  }
+
+  .gallery-item-4 .overlayZ:hover{
+    opacity:1;
+  }
+  
+  .gallery-item-3{
+    position: relative;
+    border-radius: 15%;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    height: 300px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    z-index: 2;
+  }
+
+  .gallery-item-3 .overlayZ{
+    display:block;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.329);
+    height: 300px;
+    opacity: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    z-index: 3;
+    text-align: center;
+  }
+  .gallery-item-3 .overlayZ p{
+    color: white;
+    font-size: 40px;
+  }
+
+  .gallery-item-3 .overlayZ:hover{
+    display:block;
+    position: absolute;
+    border-radius: 15%;
+    height: 300px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    z-index: 3;
+  }
+  
+  .gallery-item-4 {
+    left: 70%;
+    transform: translateX(-50%);
+  }
+  
+  .gallery-item-5 {
+    left: 85%;
+    opacity: .4;
+    transform: translateX(-50%);
+  }
+  
+  .gallery-controls {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  
+  .gallery-controls button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 20px;
+    padding: 0 12px;
+    text-transform: capitalize;
+  }
+  
+  .gallery-controls button:focus {
+    outline: none;
+  }
+  
+  .gallery-controls-previous {
+    position: relative;
+  }
+  
+  .gallery-controls-previous::before {
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    content: '';
+    display: inline-block;
+    height: 4px;
+    left: -10px;
+    padding: 2px;
+    position: absolute;
+    top: 0;
+    transform: rotate(135deg) translateY(-50%);
+    transition: left 0.15s ease-in-out;
+    width: 4px;
+  }
+  
+  .gallery-controls-previous:hover::before {
+    left: -18px;
+  }
+  
+  .gallery-controls-next {
+    border: 1px solid gold;
+    position: relative;
+  }
+  
+  .gallery-controls-next::before {
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    content: '';
+    display: inline-block;
+    height: 4px;
+    padding: 2px;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: rotate(-45deg) translateY(-50%);
+    transition: right 0.15s ease-in-out;
+    width: 4px;
+  }
+  
+  .gallery-controls-next:hover::before {
+    right: -18px;
+  }
+  
+  .gallery-nav {
+    bottom: -15px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .gallery-nav li {
+    background: #ccc;
+    border-radius: 50%;
+    height: 10px;
+    margin: 0 16px;
+    width: 10px;
+  }
+  
+  .gallery-nav li.gallery-item-selected {
+    background: #555;
+  }
+
+
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ temp*/ 
+
+  .instagram_feed {
+    overflow: hidden;
+  }
+  .instagram_feed .instagram_new {
+    width: 16.666%;
+    float: left;
+    padding: 0 1px 1px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .instagram_feed img.insta-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border:1px solid transparent;
+    border-radius: 25%;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+  }
+  .instagram_feed .insta-link {
+    position: relative;
+    display: block;
+    background: transparent;
+    padding-top: 100%;
+  }
+  .instagram_feed .insta-link:hover .insta-image {
+    opacity: 0.2;
+  }
+  
+
+  .carousel-ico{
+    width: 75px;
+    cursor: pointer;
+    border:1px solid transparent;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+  .carousel-ico:hover{
+    background-color: beige;
+    box-shadow: 0 0 15px 3px #ffffff;
+    transition: 0.3s;
+  }
+  
+  .carousel-ico:active{
+    box-shadow: 0 0 50px 3px #ffffff;
+    background-color: beige;
+    transition: 0.3s;
+  }
+
+  .gallery{
+    cursor: auto;
+  }

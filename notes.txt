@@ -1,0 +1,33 @@
+Carousel-Instagram ---- Por @RenanFG ----
+
+
+integrations of two codes...
+
+all credits to: 
+# jquery-feed-instagram-graph  (instagram ajax code)
+# vanilla-js-carousel-master  (carousel)
+
+PT-br:
+Como usar: 
+copie a estrutura de index HTML, no seu projeto.
+é necessário jquery, carregue-o antes do script do carousel
+
+Token:
+é necessário a token do instagram, veja como conseguir a token:
+https://www.mageplaza.com/kb/how-to-get-instagram-feed-access-token.html
+
+após colar a token em carrousel-instagram-mgc.js, linha 68. está pronto para usar, lembrando que o modelo usa os 6 ultimos posts do instagram, voce consegue adicionar mais usando a variavel limit, e adicionando outra mais estruturas no html de acordo com a quantidade desejada.
+
+
+EN:
+How to use:
+Copy the HTML sctructure into your project, remember to have jquery loaded before the main
+script,
+
+Token:
+you need the instagram token, read more about it and how to get  your instagram token:
+https://www.mageplaza.com/kb/how-to-get-instagram-feed-access-token.html
+
+place the token in the token variable (line 68), and its ready to use. 
+
+The current model only uses the latest 6 images, if you wish to add more, increase the limit to the ammount desired, and add more structures to your html.
