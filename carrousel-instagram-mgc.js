@@ -1,13 +1,10 @@
-// By @RenanFG  2021
-
-
-
 // _______Carousel__________________________
 var galleryContainer = document.querySelector('.gallery-container');
 var galleryControlsContainer = document.querySelector('.gallery-controls');
 var galleryItems = document.querySelectorAll('.gallery-item');
 var proxbtn = document.getElementById('prox');
 var antbtn = document.getElementById('ant');
+var igAccesstoken = 'IGQVJYdEhORGZAUU3paN3FXcUtVSFBrOFN1YzBqOHJYSmlUZAUt4OGw5bWRiS21YZAG9WRnctRnI5a3k5MGJyZA3hCZAUVJSUxFTkZAMQVYxMWQ2SDBpaFhzTjNMNnVNSWJsdE1Ndm1CaW9tZAGp3NmNYd052NwZDZD';
 
 class Carousel {
   constructor(container, items, controls) {
@@ -31,8 +28,6 @@ class Carousel {
   }
 
   setCurrentState(direction) {
-
-
     if (direction == 'ant') {
       this.carouselArray.unshift(this.carouselArray.pop());
     } else {
@@ -61,16 +56,12 @@ class Carousel {
     }
 }
 
-
-
-
 if ( $('#instagram-feed1').length != 0 ) {
-  var token = 'IGQVJYdEhORGZAUU3paN3FXcUtVSFBrOFN1YzBqOHJYSmlUZAUt4OGw5bWRiS21YZAG9WRnctRnI5a3k5MGJyZA3hCZAUVJSUxFTkZAMQVYxMWQ2SDBpaFhzTjNMNnVNSWJsdE1Ndm1CaW9tZAGp3NmNYd052NwZDZD';
   var fields = 'id,media_type,media_url,thumbnail_url,timestamp,permalink,caption';
   var limit = 6; // Set a number of display items
   count = 1;
   $.ajax ( {
-      url: 'https://graph.instagram.com/me/media?fields='+ fields +'&access_token='+ token +'&limit='+ limit,
+      url: 'https://graph.instagram.com/me/media?fields='+ fields +'&access_token='+ igAccesstoken +'&limit='+ limit,
       type: 'GET',
       success: function( response ) {
       
@@ -106,7 +97,6 @@ if ( $('#instagram-feed1').length != 0 ) {
           }
           const exampleCarousel = new Carousel(galleryContainer, galleryItems);
           exampleCarousel.setControls();
-// exampleCarousel.setNav();
       },
       error: function(data) {
           var html = '<div class="class-no-data">No Images Found</div>';

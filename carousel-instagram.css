@@ -13,7 +13,7 @@
     border: 2px solid transparent;
     border-radius: 15%;
     background: rgba(0, 0, 0, 0.404);
-    cursor:url(z.cur),auto;
+    cursor: pointer;
   }
 
   .overlayZ p:hover{
@@ -240,10 +240,10 @@
 
   /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ temp*/ 
 
-  .instagram_feed {
+  .instagram-feed {
     overflow: hidden;
   }
-  .instagram_feed .instagram_new {
+  .instagram-feed .instagram_new {
     width: 16.666%;
     float: left;
     padding: 0 1px 1px 0;
@@ -251,7 +251,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  .instagram_feed img.insta-image {
+  .instagram-feed img.insta-image {
     position: absolute;
     left: 0;
     top: 0;
@@ -266,13 +266,13 @@
     -ms-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
   }
-  .instagram_feed .insta-link {
+  .instagram-feed .insta-link {
     position: relative;
     display: block;
     background: transparent;
     padding-top: 100%;
   }
-  .instagram_feed .insta-link:hover .insta-image {
+  .instagram-feed .insta-link:hover .insta-image {
     opacity: 0.2;
   }
   
