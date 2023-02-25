@@ -39,4 +39,4 @@ Classes CSS devem estar em kebab case: Todas as classes CSS devem ser escritas e
 
 Lembrando que todos os pull requests devem ser linkados a issues abertas: Ao enviar um pull request, é importante vinculá-lo a uma issue aberta e relevante. Isso ajudará a manter um histórico de todas as alterações e melhorias no projeto. Para vincular um pull request a uma issue, basta adicionar o número da issue na descrição da solicitação de pull, precedido pelo símbolo # (por exemplo, #10).
 
-Agradecemos sua colaboração para seguir essas regras de código. Eles são importantes para manter uma base de código limpa e organizada. Se você tiver dúvidas ou precisar de ajuda, não hesite em entrar em contato conosco.
+Agradecemos sua colaboração para seguir essas regras de código. Elas são importantes para manter uma base de código limpa e organizada. Se você tiver dúvidas ou precisar de ajuda, não hesite em entrar em contato conosco.
