@@ -1,43 +1,10 @@
-const main = document.getElementById('main-app').innerHTML = `
-<div class="gallery">
-<div class="gallery-container" id="gallery-container1">
-  <span data-index="1" class="gallery-item gallery-item-1">
-   
-  </span>
-  <span data-index="2" class="gallery-item gallery-item-2">
-    
-  </span>
-  <span data-index="2" class="gallery-item gallery-item-3">
-   
-  </span>
-  <span data-index="4" class="gallery-item gallery-item-4">
-   
-  </span>
-  <span data-index="5" class="gallery-item gallery-item-5">
- 
-  </span>
-  <span data-index="6" class="gallery-item gallery-item-6">
-   
-  </span>
- 
-</div>
-
-<div style= "text-align: center;">
-
-<img class="carousel-ico" src="previous.png" id="ant">
-<img class="carousel-ico" src="next.png" id="prox">
-</div>
-</div>
-`
-
-
 // _______Carousel__________________________
 var galleryContainer = document.querySelector('.gallery-container');
 var galleryControlsContainer = document.querySelector('.gallery-controls');
 var galleryItems = document.querySelectorAll('.gallery-item');
 var proxbtn = document.getElementById('prox');
 var antbtn = document.getElementById('ant');
-var igAccesstoken = 'IGQVJYdEhORGZAUU3paN3FXcUtVSFBrOFN1YzBqOHJYSmlUZAUt4OGw5bWRiS21YZAG9WRnctRnI5a3k5MGJyZA3hCZAUVJSUxFTkZAMQVYxMWQ2SDBpaFhzTjNMNnVNSWJsdE1Ndm1CaW9tZAGp3NmNYd052NwZDZD';
+var igAccesstoken = 'IGQVJYdDgydTlzOTVhd0tDTkFGWk91WU9uT2hDOVpTSHVzVFZAhNU12ZAHNhcTJzSThxTjJVdUJiQmdXQ3RDVjR0aE52alk1elpZAOFh6U1RQdUMwLUE2V0N0amxSRlUyTVJmbVNfU19EemF2ZAzNGdjdOZAwZDZD';
 
 class Carousel {
   constructor(container, items, controls) {
@@ -137,4 +104,6 @@ if ( $('#instagram-feed1').length != 0 ) {
           }
   });
 }
+
+
 
