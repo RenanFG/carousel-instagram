@@ -4,7 +4,7 @@ var galleryControlsContainer = document.querySelector('.gallery-controls');
 var galleryItems = document.querySelectorAll('.gallery-item');
 var proxbtn = document.getElementById('prox');
 var antbtn = document.getElementById('ant');
-var igAccesstoken = 'IGQVJYdDgydTlzOTVhd0tDTkFGWk91WU9uT2hDOVpTSHVzVFZAhNU12ZAHNhcTJzSThxTjJVdUJiQmdXQ3RDVjR0aE52alk1elpZAOFh6U1RQdUMwLUE2V0N0amxSRlUyTVJmbVNfU19EemF2ZAzNGdjdOZAwZDZD';
+var igAccesstoken = 'Token Here';
 
 class Carousel {
   constructor(container, items, controls) {
