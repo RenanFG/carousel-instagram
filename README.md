@@ -15,4 +15,4 @@ Este projeto é uma integração de dois códigos, com a finalidade de criar um 
 * jquery-feed-instagram-graph ([https://github.com/ribeiroeder/jquery-feed-instagram-graph](https://github.com/ribeiroeder/jquery-feed-instagram-graph))
 * vanilla-js-carousel-master ([https://github.com/zoltantothcom/vanilla-js-carousel](https://github.com/zoltantothcom/vanilla-js-carousel))
 
-Deseja contribuir para o projeto? [Clique aqui](arquivo2.md) para ler as diretrizes de contribuição.
+Deseja contribuir para o projeto? [Clique aqui](CONTRIBUTING.md) para ler as diretrizes de contribuição.
