@@ -7,7 +7,7 @@ Este projeto é uma integração de dois códigos, com a finalidade de criar um 
 
 1. Copie as estruturas de div no index HTML para o seu projeto.
 2. É necessário jquery, carregue-o antes do script do carousel.
-3. É necessário a token do Instagram, veja como conseguir a token no seguinte link: [https://www.mageplaza.com/kb/how-to-get-instagram-feed-access-token.html](https://www.mageplaza.com/kb/how-to-get-instagram-feed-access-token.html).
+3. É necessário a token do Instagram, por politicas do Facebook, não podemos disponibilizar uma token para teste. Veja como conseguir a token no seguinte link: [https://www.mageplaza.com/kb/how-to-get-instagram-feed-access-token.html](https://www.mageplaza.com/kb/how-to-get-instagram-feed-access-token.html).
 4. Coloque a chave da token na variável igAccesstoken, linha 7 do arquivo carousel-instagram-mgc.js.
 
 ## Projetos bases
@@ -16,3 +16,5 @@ Este projeto é uma integração de dois códigos, com a finalidade de criar um 
 * vanilla-js-carousel-master ([https://github.com/zoltantothcom/vanilla-js-carousel](https://github.com/zoltantothcom/vanilla-js-carousel))
 
 Deseja contribuir para o projeto? [Clique aqui](CONTRIBUTING.md) para ler as diretrizes de contribuição.
+
+[Confira um exemplo da aplicação utilizando uma token real](http://genshinhub.rf.gd/carousel/) 
